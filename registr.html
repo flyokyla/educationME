@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <p> <a href="index.html"> <img src="images/photo.jpg" width="100" title="BAZA" alt="BAZA"/> </a> - перейти на <i><u>главную</u></i></p>
+    </div>
+
+    <h1> РЕГИСТРАЦИЯ </h1>
+    <form name="signup" action="#" method="post">
+        <div>
+            <label>Введите логин: </label>
+            <input type="text" name="username" placeholder="крутая жаба" />
+        </div>
+        <div>
+            <label>Введите email: </label>
+            <input type="email" name="email" placeholder="jaba1337gmail.com" value="123@gmail.com"/>
+        </div>
+        <div>
+            <label>Введите пароль: </label>
+            <input type="password" name="password" />
+        </div>
+
+        <div>
+            <label>Укажите пол:</label>
+            <input type="radio" name="sex" value="0"/> Мужской
+            <input type="radio" name="sex" value="1"/> Женский
+        </div>
+
+        <div>
+            <label>Я ознакомлен с правилами:</label>
+            <input type="checkbox" name="conf" /> Правила конфиденциальности
+            <input type="checkbox" name="sogl" /> Подтверждаю согласие на обработку
+        </div>
+
+        <div>
+            <label>Загрузите фото:</label>
+            <input type="file"/>
+        </div>
+
+        <div>
+            <label>Ваш год рождения:</label>
+            <select name="year">
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Ваш месяц рождения:</label>
+            <input type="month" name="month" min="2000-01" value="2000-01" />
+        </div>
+
+        <div>
+            <label>Ваша неделя рождения:</label>
+            <input type="week" name="week" min="2000-W00" max="2024-W52" required />
+        </div>
+
+        <div>
+            <label> Ваша дата рождения: </label>
+            <input type="date" name="data" value="2000-01-01" min="2000-01-01" max="2024-04-22" />
+        </div>
+
+        <div>
+            <label>Время вашего рождения:</label>
+            <input type="time" name="tim" min="00:00" max="23:00" required />
+        </div>
+
+        <div>
+            <label>Секрет:</label>
+            <input type="hidden"/> 1234
+        </div>
+
+        <div>
+            <label>Кнопочка:</label>
+            <input type="button" value="тык-тык"/> 
+        </div>
+
+        <div>
+            <label>Выберете цвет:</label>
+            <input type="color"/>
+        </div>
+
+        <div>
+            <label>Кол-во жизней:</label>
+            <input type="number" placeholder="123"/>
+        </div>
+
+        <div>
+            <label1>Search the site:</label1>
+            <input type="search" name="poisk" />
+            <button>Search</button>
+        </div>
+
+        <div>
+            <label>Обратная связь:</label>
+            <textarea placeholder="бла бла бла">Все работает!</textarea>
+        </div>
+
+        <div>
+            <label for="phone">Enter your phone number:<br /> <small>Format: 123-456-7890</small> </label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />              
+        </div>
+
+        <div>
+            <label>Audio settings:</label>
+            <input type="range" id="volume" name="volume" min="0" max="100" />
+            <label for="volume">Volume </label>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Нравится какать?:</legend>
+                  <input type="radio" name="kakat" value="1" checked />
+                  <label >Да</label>
+              
+                  <input type="radio" name="kakat" value="11" />
+                  <label >Очень</label>
+              
+                  <input type="radio" name="kakat" value="111" />
+                  <label >Определенно</label>
+              </fieldset>
+        </div>
+        
+        <div>
+            <label>Ссылка на ваш телеграмм:</label>
+            <input type="url" name="url" placeholder="https://web.telegram.org/ pattern="https://.*" size="30" required />
+        </div>
+
+        <input type="reset" name="res" value="Сбросить"/>
+        <input type="submit" name="signup" value=" Зарегистрироваться"/>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE=html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="struct.css"/>
+    <title>СТРУКТУРА HTML</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <p> <a href="/lesssHTML/index.html"> <img src="/lesssHTML/images/photo.jpg" width="100" title="BAZA" /> </a> - <i><u>перейти на главную</u></i></p>
+        </div>
+        <h1>СТРУКТУРА HTML</h1>
+    </header>
+
+    <main>
+    <dl>
+        <dt> <h2>ОФОРМЛЕНИЕ</h2> </dt>
+            <dd>
+                <div>
+                    <p> <b>'p' ... '/p'</b> - <u>написать</u> что либо </p>
+                    
+                    <dl>
+                        <dt><p> <b>'b' ... '/b'</b> - <u>сделать текст</u> <b>жирным</b> </p> </dt>
+                            <dd> <p> -- <u>альтернатива</u> <strong>&lt;strong&gt; ... &lt;/strong&gt;</strong></p> <strong>!Но &lt;strong&gt; <u>более важный</u></strong>:<strong>Внимание!</strong> </dd>
+                    </dl>
+
+                    <dl>
+                        <dt> <p> <b>'u' ... '/u'</b> - сделать текст <u>подчеркнутым</u> </p> </dt>
+                        <dd> -- альтернатива: <b> &lt;ins&gt; ... &lt;/ins&gt; </b> </dd>
+                    </dl>
+
+                    <dl>
+                        <dt><p><b>'i' ... '/i'</b> - <i> курсив; текст, который отличается от окружающего, но не является более важным </i>: Он взглянул в окно и подумал — <i>такого просто не может быть</i>!</p></dt>
+                        <dd> <p>-- <b>альтернатива</b> <em>&lt;em&gt;</em> <b>!Но &lt;em&gt; обозначает текст, на который сделан особый акцент, меняющий смысл предложения:</b>Я <em>просто обожаю</em> холодные зимние дни! </p> </dd>
+                    </dl>
+
+                    <p> <b> &lt;del datetime=(передача времени машине)"2016-11-18T09:54" &gt; ... &lt;/del&gt;</b> - <ins> сделать текст зачеркнутым</ins>: <del>Зачеркнуть</del> </p>
+                    
+                    <p> <b> &lt;time datetime="2016-11-18T09:54"(передача времени машине) &gt; ... &lt;/time&gt; </b> - <u> обозначение времени</u>: <time datetime="2024-04-29T023:14"> сейчас 23:14</time> </p>
+
+                    <p> <b> &lt;br&gt; </b> - <u> перенос строки </u> <b><br>!НЕ ИСПОЛЬЗОВАТЬ КАК НОВЫЙ АБЗАЦ</b> </p>
+
+                    <p> <b>&lt;sup&gt; ... &lt;/sup&gt;</b> - <u> верхний индекс</u>: 20m<sup>2</sup> </p>
+                    <p> <b>&lt;sub&gt; ... &lt;/sub&gt;</b> - <u> нижний индекс </u>: H<sub>2</sub>O / y = x<sup> z<sub>2</sub><sup>y<sup>2</sup>+1 </sup> </p>
+
+                </div>
+                
+                <div>
+                    <p> <b> &lt;q cite="линк источника"&gt; ... &lt;cite&gt; выделить хозяина цитаты &lt;/cite&gt; ... &lt;/q&gt; </b> - цитата внутри текста: </p>
+                    <p>Как говорил мой дед: <q cite="https://www.google.com">Я твой дед</q></p>
+                    <p>Ну или <cite>Дед</cite> говорил: <q>Я не твой дед</q></p><cite>Мой дед</cite>
+
+                    <p> <b> &lt;blockquotecite="линк источника"&gt; ... &lt;p&gt; цитата &lt;/p&gt; ... &lt;cite&gt; хозяин цитаты &lt;/cite&gt;  &lt;/blockquote&gt; </b> - отдельная цитата: </p>
+                    <blockquote>
+                        <p>Я запрещаю вам срать</p>
+                        <cite> Джейсон Стэтхем </cite>
+                    </blockquote>
+                </div>
+
+                <div>
+                    <b> <'pre'> ... <'/pre'></b> - <u> текст без автоформатирования: </u>
+                    <pre>
+                                                                     /\_/\
+                                                                    ( o.o )
+                                                                     = ^ =
+                    </pre>
+                </div>
+
+                <div>
+                    <p> <b> &lt;code&gt; ... &lt;/code&gt;</b> - <u> обозначение фрагментов кода </u>: <code> &lt;code&gt; ... &lt;/code&gt; </code> </p>
+                </div> 
+                
+                <div>
+                    <b><u>! обычно объединяют тег pre и code, чтобы получить красиво отформатированный код:</u><pre><code></b>
+                        &lt;blockquote&gt;
+                            &lt;p&gt;Ум ценится дорого, когда дешевеет сила.&lt;/p&gt;
+                            &lt;cite&gt;Джейсон Стэтхэм&lt;/cite&gt;
+                        &lt;/blockquote&gt;
+                    </code></pre>
+                </div>
+
+                <div>
+                    <b>мнемотика - "'&'lt;" = "<"  "'&'gt;" = ">"</b>
+                </div>
+
+                
+            </dd>
+
+        <dt> <h2>СПИСКИ</h2> </dt>
+        <dd>
+            <div>
+                <p> <b>'li' ... '/li'</b> - строка списка: 
+                    <li>Lorem ipsum dolor sit amet.</li> 
+                    <li>Lorem ipsum dolor sit amet consectetur.</li> 
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li> 
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li> 
+                </p>
+                
+                <p><b>'ul' ... '/ul'</b> - <u>ненумерованный список</u>: 
+                    <ul>Lorem.</ul>
+                    <ul>Lorem, ipsum.</ul>
+                    <ul>Lorem, ipsum dolor.</ul>
+                </p>
+
+                <p> <b>'ol' ... '/ol'</b> - <u>нумерованный список</u>: 
+                    <ol start="4" type="A" reversed>
+                        <li>Lorem ipsum dolor sit amet.</li> 
+                        <li>Lorem ipsum dolor sit amet consectetur.</li> 
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li> 
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li> 
+                    </ol> 
+                </p>
+            </div>
+            
+            <div>
+                <dl>
+                        <dt> <b> <'dl'> </b> - (description list) <u> список описания </u> </dt>
+                            <dd> <b> <'dt'> </b> - (description term) <u> термин списка описания </u> </dd>
+
+                            <dd> <strong> <'dd'> </strong> - (description definition) <u> описание/определение термина </u> </dd>
+                            <dd> ... </dd>
+                            <dd>
+                                <dl>
+                                    <dt>termin1</dt>
+                                        <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, officia.</dd>
+
+                                    <dt>termin2</dt>
+                                        <dd>Lorem ipsum dolor sit amet.</dd>
+                                        <dd>Lorem ipsum dolor sit amet consectetur adipisicing.</dd>
+                                </dl>
+                            </dd>
+                </dl>
+            </div>
+        </dd>
+
+        <dt> <h2>ВСТАВКИ</h2> </dt>
+        <dd>
+            <div>
+                <p><b>'img src="путь" alt="название картинки" width="ширина" height="высота" title="название картинки при наведениии курсора"/'</b> - добавление <u>картинки</u></p>
+                
+                <p> <b> 'a href="ссылка или файл" target="_blank"(- ссылка откроется в новом окне; если убрать то все будет в одном) ' ... '/a'</b> - <u> гиперссылка </u> </p>
+            </div>
+        </dd>
+
+        <dt> <h2>ТАБЛИЦА</h2> </dt>
+        <dd>
+            <div>
+                <p> <b>'table barder</b>="ширина границ" <b>width=</b>"px или % ширины таблицы" <b>height=</b>"px или % высоты таблицы" ' <b>... '/table'</b> - <u>создание таблицы</u>. <i> Обозначение:</i></p>
+                <table border="5" width="70%" height=20%">
+                    <tr>
+
+                        <td align="center">
+                        <table border="2"">
+                            <tr>
+                            <td><b><'tr'></b> </td>
+                            <td align="center">...</td>
+                            <td> - <u>обозначение строки</u></td>
+                            </tr>
+                            <tr>
+                                <td align="center">...</td>
+                                <td colspan="2"> <b><'td align=</b>"<i>left/center/right</i>" <b>rowspan=</b>"<i>кол-во захватываемых строк</i>" <b>colspan=</b>"<i>кол-во захватываемых столбцов</i>"'> - <u>обозначение столбца</u></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" align="center"> ... </td>
+                            </tr>
+                            <tr>
+                                <td align="center">...</td>
+                                <td colspan="2"> <b> <'/td'>  </b> </td>
+                                
+                            </tr>
+                            <tr>
+                                <td colspan="3"> <b>  <'/tr'>  </b></td>
+                            </tr>
+                        </table>
+                        </td>
+
+                        <td align="center">
+                        <table border="2">
+                            <tr>
+                                <td colspan="3" align="center">title</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" align="center">MENU</td>
+                                <td> first </td>
+                                <td> second </td>
+                                
+                            </tr>
+                            <tr>
+                                <td> third </td>
+                                <td> fourth </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" align="center"> conclusion </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    </tr>
+                </table>
+            </div>
+        </dd>
+
+        <dt> <h2> <a href="razmetka/index.html"> БЛОКИ </a> </h2> </dt>
+        <dd>
+            <div>
+                <p> <b> &lt;div class="Название Собственного Стиля" &gt; ... &lt;/div&gt;</b> - <u> объявление большого блока - группировки крупных элементов</u> </p>
+
+                <p> <b> &lt;span&gt; </b> - объявление маленького блока - выделение мелких текстовых элементов</p>
+
+                <p><b> &lt;head&gt; ... &lt;/head&gt;</b> - <u>служебная информация о странице</u>; содержит заголовок, кодировку, ссылку на css и др.</p>
+
+                <p><b> &lt;main&gt; ... &lt;/main&gt;</b> - <u> основное содержание страницы, которое не повторяется на других страницах</u> </p>
+
+                <p> <b> &lt;header&gt; ... &lt;/header&gt;</b> - <u>шапка страницы</u> </p>
+
+                <p> <b> &lt;footer&gt; ... &lt;/footer&gt;</b> - <u>подвал страницы</u> </p>
+
+                <p> <b> &lt;section&gt; ... &lt;/section&gt;</b> - <u>смысловой раздел</u>(главы книги) - описывает содержание или значение раздела: «О компании» - «Редактирование профиля» - ... </p>
+
+                <p> <b> &lt;nav&gt; ... &lt;/nav&gt;</b> - <u> основная навигация</u> - Первый пост, второй пост, архив постов </p>
+
+                <p> <b> &lt;arcticle&gt; ... &lt;/article&gt;</b> - <u>обозначает цельный, законченный и самостоятельный фрагмент информации</u> </p>
+
+                <p> <b> &lt;aside&gt; ... &lt;/aside&gt;</b> - <u>сайдбар или боковая панель</u> </p>
+
+            </div>
+        </dd>
+
+    </dl>
+    </main>
+</body>
+
+
+
+
+
+
+
