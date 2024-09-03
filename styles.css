@@ -1,0 +1,49 @@
+body {
+    font-size: 25px;
+    font-family: "Iosevka", sans-serif;
+    line-height: 40px;
+    
+  }
+
+
+nav, header {
+    background-color: #d2b8e9;
+    border-radius: 20px;
+    color: rgb(252, 224, 233);
+    margin: 50px 300px ;
+    border: solid #5e3b4f 10px;
+    
+}
+
+header {
+    margin: 40px 40%;
+    background-image: url(images/photo.jpg) ;
+
+}
+
+h1 {
+    text-align: center;
+    
+    
+}
+
+img{
+    border-radius: 100%;
+    margin: 10px 35%;
+    
+    
+}
+
+nav a {
+    color: #5e3b4f;
+}
+
+nav ul {
+    margin: 40px 10px ;
+    color: #5e3b4f;
+}
+
+a:hover{
+    color: yellow;
+}
+

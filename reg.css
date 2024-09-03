@@ -1,0 +1,24 @@
+form input:focus{
+    border-color: #08c;
+    color: rgb(25, 71, 94);
+}
+
+input[required]{
+    background-color: #fcf8e3;
+}
+
+input[type="password"]{
+    background-color: #f2dede;
+}
+
+input[type="submit"]{
+    border-color:green;
+}
+
+input[type="reset"]{
+    border-color:red;
+}
+
+input[type="image"]{
+    border: 1px solid rgb(229, 122, 234);
+}
