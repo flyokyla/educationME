@@ -1,0 +1,10 @@
+code{
+    font-family: "Iosevka";
+    
+}
+
+pre{
+    border-left: rgba(198, 97, 223, 0.705) solid 5px;
+    margin-left: 15px;
+    padding-left: 10px;
+}

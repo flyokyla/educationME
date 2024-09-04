@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,20 +13,28 @@
     </div>
 
     <h1> РЕГИСТРАЦИЯ </h1>
-    <form name="signup" action="#" method="post">
+    <form name="signup" action="https://echo.htmlacademy.ru/courses" method="post" oninput="DISPaudio.value=volume1.value">
+
+        <fieldset>
+        <legend>ОСНОВНЫЕ ДАННЫЕ</legend>
         <div>
-            <label>Введите логин: </label>
-            <input type="text" name="username" placeholder="крутая жаба" />
+            <label for="login-field">Ваш логин</label>
+            <input type="text" name="login" id="login-field" placeholder="крутая жаба" required>
         </div>
         <div>
-            <label>Введите email: </label>
-            <input type="email" name="email" placeholder="jaba1337gmail.com" value="123@gmail.com"/>
-        </div>
-        <div>
-            <label>Введите пароль: </label>
-            <input type="password" name="password" />
+            <label>Введите email: 
+            <input type="email" name="email" placeholder="jaba1337gmail.com" value="123@gmail.com" required />
+        </label>
         </div>
 
+        <div>
+            <label for="password-field">Введите пароль:</label>
+            <input type="password" name="password" id="password-field" required  />
+        </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>по приколу</legend>
         <div>
             <label>Укажите пол:</label>
             <input type="radio" name="sex" value="0"/> Мужской
@@ -40,12 +49,12 @@
 
         <div>
             <label>Загрузите фото:</label>
-            <input type="file"/>
+            <input  type="file"/>
         </div>
 
         <div>
-            <label>Ваш год рождения:</label>
-            <select name="year">
+            <label for="sel-year">Ваш год рождения:</label>
+            <select name="year" id="sel-year">
                 <option value="2000">2000</option>
                 <option value="2001">2001</option>
                 <option value="2002">2002</option>
@@ -64,13 +73,18 @@
         </div>
 
         <div>
+            <label>Время вашего рождения:</label>
+            <input type="time" name="tim" min="00:00" max="23:00" required />
+        </div>
+
+        <div>
             <label> Ваша дата рождения: </label>
             <input type="date" name="data" value="2000-01-01" min="2000-01-01" max="2024-04-22" />
         </div>
 
         <div>
-            <label>Время вашего рождения:</label>
-            <input type="time" name="tim" min="00:00" max="23:00" required />
+            <label>А теперь полностью:</label>
+            <input type="datetime-local" />
         </div>
 
         <div>
@@ -80,28 +94,36 @@
 
         <div>
             <label>Кнопочка:</label>
-            <input type="button" value="тык-тык"/> 
+            <input type="button" value="тык-тык"/> - ничего не делает без js
         </div>
 
         <div>
             <label>Выберете цвет:</label>
-            <input type="color"/>
+            <input tabindex="5" type="color"/>
         </div>
 
         <div>
             <label>Кол-во жизней:</label>
-            <input type="number" placeholder="123"/>
+            <input type="number" placeholder="123" step="2" min="-5" max="10" autofocus/>
         </div>
 
         <div>
-            <label1>Search the site:</label1>
+            <label>Ваш сайт:</label>
             <input type="search" name="poisk" />
-            <button>Search</button>
+        </div>
+
+        <div>
+            <label for="brows">Браузер которым вы пользуетесь:</label>
+            <input type="text" list="browsers" name="VARbrows" id="brows" />
+            <datalist id="browsers">
+                <option value="firefox">  </option>
+                <option value="vivaldi"> </option>
+            </datalist>
         </div>
 
         <div>
             <label>Обратная связь:</label>
-            <textarea placeholder="бла бла бла">Все работает!</textarea>
+            <textarea rows="5" cols="10" placeholder="бла бла бла">Все работает!</textarea>
         </div>
 
         <div>
@@ -110,32 +132,36 @@
         </div>
 
         <div>
-            <label>Audio settings:</label>
-            <input type="range" id="volume" name="volume" min="0" max="100" />
-            <label for="volume">Volume </label>
+            <label>Audio settings:
+            <input type="range" id="volume" name="volume1" step="10" min="0" max="100" />
+            <output name="DISPaudio">12</output>
+            </label>
         </div>
 
         <div>
-            <fieldset>
+            <fieldset >
                 <legend>Нравится какать?:</legend>
-                  <input type="radio" name="kakat" value="1" checked />
+                  <input type="radio" name="kakat" value="1" />
                   <label >Да</label>
               
-                  <input type="radio" name="kakat" value="11" />
+                  <input type="radio" name="kakat" value="11" checked />
                   <label >Очень</label>
               
-                  <input type="radio" name="kakat" value="111" />
+                  <input type="radio" name="kakat" value="111"  />
                   <label >Определенно</label>
               </fieldset>
         </div>
         
         <div>
             <label>Ссылка на ваш телеграмм:</label>
-            <input type="url" name="url" placeholder="https://web.telegram.org/ pattern="https://.*" size="30" required />
+            <input tabindex="4" type="url" name="url" placeholder="https://web.telegram.org/ pattern="https://.*" size="30" required />
         </div>
 
         <input type="reset" name="res" value="Сбросить"/>
-        <input type="submit" name="signup" value=" Зарегистрироваться"/>
+        <input type="submit" name="signup" value=" Зарегистрироваться"/> -- альтернатива --
+        <input type="image" name="signupIM" src="images/photo.jpg" alt="Зарегистрироваться" width="20px" /> -- но тут на сервер еще передаются координату щелчка по картинке
+
+        </fieldset>
     </form>
     
 </body>

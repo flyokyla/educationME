@@ -1,0 +1,14 @@
+
+
+dl{
+    border-top:5px solid rgba(45, 47, 152, 0.905);
+    border-left:5px solid rgba(45, 47, 152, 0.905);
+}
+
+.vajno{
+    font-size:larger ;
+    font-weight:bold;
+    border-left:5px solid red;
+    border-right:5px solid red;
+    margin:15px;
+}

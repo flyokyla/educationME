@@ -1,0 +1,26 @@
+.vmesto{
+    border-left: 5px solid #a9688d ;
+    line-height: 20px;
+    padding-left: 14px;
+}
+
+pre{
+    margin:0px;
+    border-left: 5px solid #08c;
+  }
+
+code{
+    font-family: "Iosevka";
+}
+
+h4{
+    margin:0px 10px;
+}
+
+h3:hover{
+    background-color: #fcf8e3;
+}
+
+code:hover{
+    color: #08c;
+}
